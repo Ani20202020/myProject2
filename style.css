@@ -1,29 +1,35 @@
+/* Custom styles for Number Sorter project */
+
 body {
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-}
-
-.container {
-    text-align: center;
-    width: 300px;
-}
-
-input, button {
+    background-color: #f4f4f4;
+  }
+  
+  .container {
     width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-}
-
-.error {
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .error {
     color: red;
     font-size: 0.9em;
-}
-
-#resultMessage {
     margin-top: 10px;
+  }
+  
+  .output {
+    margin-top: 15px;
     font-weight: bold;
-}
+    font-size: 1em;
+  }
+  

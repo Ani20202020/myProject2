@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Sorter</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Sorter with Caching</title>
+  <!-- Milligram CSS for basic styling -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Sorted Numbers</h2>
-        <input type="text" id="numberInput" placeholder="Enter numbers separated by commas or spaces">
-        <button id="sortButton" style="width: 100px; height: 40px; background-color: rgb(0, 139, 95); border-radius: 10px; color: white; font-weight: bold; font-size: 18px;">Sort</button>
-        <p id="errorMessage" class="error"></p>
-        <p id="resultMessage"></p>
+  <div class="container">
+    <h1>Number Sorter</h1>
+    <div class="row">
+      <input type="text" id="numberInput" placeholder="Enter numbers separated by commas or spaces">
     </div>
-    <script src="script.js"></script>
+    <button class="button-primary" type="button" id="sortButton">Sort</button>
+    <button class="button" type="button" id="clearButton">Clear</button>
+    <p id="errorMessage" class="error"></p>
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
